@@ -1,0 +1,134 @@
+body {
+  background-color: gainsboro;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('./my-font.woff2') format('woff2'),
+      url('./my-font.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+#header {
+    color: green;
+    margin-top: -25px;
+}
+
+#text {
+    font-family: 'myFont';
+}
+
+#burger_container {
+    height: 80vh;
+    background: url('./img/burger.jpg');
+    background-size:90%;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+
+    width: 115vw;
+}
+
+
+.icons {
+    transform: rotate(2);
+    animation: rotation 2s infinite linear;
+}
+   
+
+.icons:hover {
+    animation: none;
+    opacity: 0.7;
+    scale: 1.3;
+  
+}
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  footer:hover {
+    transform: scale(1.2);
+  }
+  
+  .middle {
+    position: relative;
+    margin-top: -35px;
+  }
+
+  #atmosphere_container {
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    text-shadow: 100px;
+    font-size: x-large;
+  }
+
+  #atmosphere_outside {
+    background-image: url(./img/outside.jpg);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #atmosphere_inside {
+    background-image: url(./img/inside.jpg);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #fourth_container_right {
+    background-image: url(./img/tomatos.jpg);
+    width: 50vw;
+    height: 100vh;
+  }
+
+  #fourth_container_left {
+    background-image: url(./img/grill.jpg);
+    width: 50vw;
+    height: 100vh;
+  }
+
+  #menu_second_container {
+    background-image: url(./img/menu.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @media (max-width: 500px) {
+    #atmosphere_container {
+      display: block !important;
+    }
+    #menu_second_container {
+      background-image: url(./img/menu_mobile.jpg);
+      background-size: cover;
+    }
+    #atmosphere_outside {
+      background-image: url(./img/outside_mobile.jpg);
+      background-size:cover
+    }
+    #atmosphere_inside {
+      background-image: url(./img/inside_mobile.jpg);
+      background-size: cover;
+    }
+    #fourth_container_left {
+      background-image: url(./img/grill_mobile.jpg);
+      width: 100vw;
+      background-size: cover;
+    }
+    #fourth_container_right {
+      background-image: url(./img/tomatos_mobile.jpg);
+      width: 100vw;
+      background-size: cover;
+    }
+    #burger_container {
+      background-image: url(./img/burger_mobile.jpg);
+      background-size: cover;
+    }
+  }
